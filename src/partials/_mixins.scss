@@ -1,14 +1,14 @@
-@mixin wt_and_ht($width, $height) {
+@mixin calcHeightWidth($width, $height) {
   width: $width;
   height: $height;
 }
 
-@mixin socialMediaImg($offest:  0px) {
+@mixin addSocialMediaImg($offest:  0px) {
   background:url($socialMediaImg) -38px * $offest 0;
 }
 
 @mixin navbar($width, $height, $float) {
-  @include wt_and_ht($width, $height);
+  @include calcHeightWidth($width, $height);
   float: $float;
 }
 
@@ -24,7 +24,7 @@
   float: $float;
 }
 
-@mixin insertMediaQuery($args) {
+@mixin addMediaQuery($args) {
   @if length($args) == 1 {
     @media (max-width: nth($args, 1)) {
       @content;

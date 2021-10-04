@@ -4,11 +4,11 @@ figure  {
   display:block;
   margin:0;
   @include navbar(400px, 190px, left);
-  @include insertMediaQuery(959px) {
+  @include addMediaQuery(959px) {
     @include navbar(inherit, 140px, none);
     background-position:center;
   }
-  @include insertMediaQuery(459px) {
+  @include addMediaQuery(459px) {
     background-size:contain;
     height:100px;
   }
@@ -16,11 +16,11 @@ figure  {
 
 nav {
   @include navbar(540px, 190px, left);
-  @include insertMediaQuery(959px) {
+  @include addMediaQuery(959px) {
     @include navbar(inherit, 50px, none);
     text-align:center;
   }
-  @include insertMediaQuery(459px) {
+  @include addMediaQuery(459px) {
     margin-bottom:40px !important;
   }
   text-align:right;
@@ -39,16 +39,16 @@ nav {
           color: $white;
         }
       }
-      @include insertMediaQuery(959px) {
+      @include addMediaQuery(959px) {
         font-size:1em;
         margin:0 10px;
       }
-      @include insertMediaQuery(767px) {
+      @include addMediaQuery(767px) {
         font-size:0.8em;
         margin:0 5px;
       }  
     }
-    @include insertMediaQuery(959px) {
+    @include addMediaQuery(959px) {
       margin-top:0;
     }
   }

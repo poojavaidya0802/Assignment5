@@ -1,5 +1,5 @@
 #headline { 
-  @include wt_and_ht(100%, 130px);
+  @include calcHeightWidth(100%, 130px);
   background:$headlineBg;
   text-align:center;
   margin:0 auto;
@@ -8,11 +8,11 @@
     font-size:2.5em;
     font-weight:100;
     padding-top:50px;
-    @include insertMediaQuery(767px) {
+    @include addMediaQuery(767px) {
       font-size:2em;
       padding-top:50px;
     }
-    @include insertMediaQuery(459px) {
+    @include addMediaQuery(459px) {
       font-size:1.5em;
       padding-top:30px;
     }
@@ -26,7 +26,7 @@
     color:$gray;
     font-size:2em;
     font-weight:400;
-    @include insertMediaQuery(459px) {
+    @include addMediaQuery(459px) {
       font-size:1.6em;
     }
   }
@@ -46,16 +46,16 @@
   #testimonials {
     @include contentStyles(460px, right);
   }
-  @include insertMediaQuery(959px) {
+  @include addMediaQuery(959px) {
     width:inherit;
   }
   > #testimonials, > #products {
-    @include insertMediaQuery(959px) {
+    @include addMediaQuery(959px) {
       width:46%;
       margin:0 2%;
     }
 
-    @include insertMediaQuery(767px) {
+    @include addMediaQuery(767px) {
       width:96%;
       margin:0 2%;
       float:none;
@@ -64,7 +64,7 @@
 }
 
 .greybar  {
-  @include wt_and_ht(100%, 90px);
+  @include calcHeightWidth(100%, 90px);
   background:$graybarBg;
   clear:both;
   padding-top:30px;
@@ -72,7 +72,7 @@
 
 body {
   > #content article img, >  .greybar{
-    @include insertMediaQuery(659px) {
+    @include addMediaQuery(659px) {
       display:none;
     }
   }

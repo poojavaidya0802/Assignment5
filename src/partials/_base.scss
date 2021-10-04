@@ -11,19 +11,19 @@ main  {
   width:940px;
   margin:0 auto;
   padding:0 10px;
-  @include insertMediaQuery(959px) {
+  @include addMediaQuery(959px) {
     width:768px;
   }
-  @include insertMediaQuery(767px) {
+  @include addMediaQuery(767px) {
     width:460px;
   }
-  @include insertMediaQuery(459px) {
+  @include addMediaQuery(459px) {
     width:300px;
   }
 }
 
 section {
-  @include insertMediaQuery(459px) {
+  @include addMediaQuery(459px) {
     width:95%;
   }
 }
