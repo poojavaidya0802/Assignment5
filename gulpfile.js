@@ -9,4 +9,5 @@ function css(){
 
 exports.default = function(){
     watch('src/*.scss',css)
+    watch('src/partials/*scss',css)
 }
